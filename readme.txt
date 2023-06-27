@@ -72,9 +72,9 @@ Login: elastic/changeme
 
 Verificare che ci sia la dashboard winlogbeat
 
-----------------------------------------
--	INSTALLAZIONE filebeat per LINUX ---
-----------------------------------------
+--------------------------------------------
+---	INSTALLAZIONE filebeat per LINUX ---
+--------------------------------------------
 
 Usare repository yum o scaricare da qui
 https://www.elastic.co/downloads/beats/filebeat
