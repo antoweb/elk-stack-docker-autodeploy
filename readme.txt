@@ -71,3 +71,15 @@ Andare sull'interfaccia ELK all'indirizzo https://IP-SERVER-ELK:5601
 Login: elastic/changeme
 
 Verificare che ci sia la dashboard winlogbeat
+
+----------------------------------------
+-	INSTALLAZIONE filebeat per LINUX ---
+----------------------------------------
+
+Usare repository yum o scaricare da qui
+https://www.elastic.co/downloads/beats/filebeat
+
+- Usare il file /etc/filebeat/filebeat.yml come esempio di configurazione (simile a windows)
+- lanciare il comando
+	filebeat setup dashboard
+- Riavviare servizio filebeat
