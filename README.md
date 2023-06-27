@@ -5,3 +5,4 @@ Pay attention to:
 
 - The script will launch dnf update (comment this line if you dont want to update your server)
 - The script disable selinux permanently
+- At the end of the script the server will be rebooted (comment init 6 line if you dont want to rebbot)
