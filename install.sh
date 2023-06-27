@@ -48,7 +48,7 @@ ipaddress=$(cat ipaddress.txt)
 
 echo "Per aprire l'interfaccia di elk andare su http://$ipaddress:5601"
 
-read -p "La macchinaa deve essere riavviata le istruzioni sopra ci stanno nel file readme.txt, Premere un tasto per continuare"
+read -p "La macchinaa deve essere riavviata le istruzioni sopra stanno anche nel file readme.txt, Premere un tasto per continuare"
 
 init 6
 
