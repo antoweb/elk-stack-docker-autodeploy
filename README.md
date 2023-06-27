@@ -1,0 +1,1 @@
+# elk-stack-docker-autodeploy
