@@ -133,6 +133,10 @@ Usare repository yum o scaricare da qui
 https://www.elastic.co/downloads/beats/filebeat
 
 - Usare il file /etc/filebeat/filebeat.yml come esempio di configurazione (simile a windows)
+- Importante aggiungere in una riga vuota la direttiva:
+	output.elasticsearch.allow_older_versions: true
+- Modificare sezioni output.elasticsearch e kibana l'ip dell'host
+- Modificare la sezione filebeat.inputs: inserendo i file da monitorare (vedi esempio filebeat.ym)
 - lanciare il comando
 	filebeat setup dashboard
 - Riavviare servizio filebeat
