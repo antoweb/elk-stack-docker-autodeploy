@@ -20,7 +20,7 @@ Installation:
   ```
 - Wait the completition of script
 - Proceed to install agent winlogbeat/filebeat to windows or linux clients for foreward clients log to logstash server (see readme.txt)
-
+- The default username and password for elk web ui is: elastic/changeme
 Pay attention to:
 
 - The script will launch dnf update (comment this line if you dont want to update your server)
