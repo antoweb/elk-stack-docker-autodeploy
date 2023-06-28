@@ -139,5 +139,5 @@ https://www.elastic.co/downloads/beats/filebeat
 - Modificare sezioni output.elasticsearch e kibana l'ip dell'host
 - Modificare la sezione filebeat.inputs: inserendo i file da monitorare (vedi esempio filebeat.ym)
 - lanciare il comando
-	filebeat setup dashboard
+	filebeat setup --dashboards
 - Riavviare servizio filebeat
