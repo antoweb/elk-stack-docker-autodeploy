@@ -2,8 +2,7 @@ Setup winlogbeat su Windows
 Video youtube: https://www.youtube.com/watch?v=grloDtOS21c
 Scaricare winlogbeat da https://www.elastic.co/downloads/beats/winlogbeat
 Unzippare il file in c:\ e rinominare la cartella in c:\winlogbeat
-Editare il file winlogbeat.yml come segue
-
+Editare il file winlogbeat.yml come segue (usare il file winlogbeat.yml di questa repository come esempio)
 
 Inserire in una riga vuota prima di winlogbeat.event_logs la riga seguente
 
