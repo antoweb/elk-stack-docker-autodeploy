@@ -47,6 +47,7 @@ hostname -I | grep -o '^[^ ]*' > ipaddress.txt
 ipaddress=$(cat ipaddress.txt)
 
 echo "Per aprire l'interfaccia di elk andare su http://$ipaddress:5601"
+echo "La login di default è elastic con password changme
 
 read -p "La macchinaa deve essere riavviata le istruzioni sopra stanno anche nel file readme.txt, Premere un tasto per continuare"
 
