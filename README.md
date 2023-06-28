@@ -3,9 +3,21 @@ This repository provide a bash script to deploy a complete stack of Elk v. 8.230
 
 Installation:
 
-- Copy all repository file to rocky linux machine
-- Launch chmod +x install.sh
-- launch comand: nohup ./install.sh > install_elk.log 2>&1 & (this will create a install_elk.log file to future troubleshooting in case of issues)
+- Install wget on your machine:
+  ```  
+  dnf install wgt
+  ```
+- Download all file with command: 
+  ```
+  wget https://github.com/antoweb/elk-stack-docker-autodeploy/archive/refs/heads/main.zip
+  ```
+- Extract file zip with command: unzip main.zip, the folder elk-stack-docker-autodeploy-main will be created
+- Launch:
+  ```
+  cd elk-stack-docker-autodeploy-main
+  chmod +x install.sh
+  nohup ./install.sh > install_elk.log 2>&1 & (this will create a install_elk.log file to future troubleshooting in case of issues)
+  ```
 - Wait the completition of script
 - Proceed to install agent winlogbeat/filebeat to windows or linux clients for foreward clients log to logstash server (see readme.txt)
 
