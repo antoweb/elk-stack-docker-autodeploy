@@ -84,6 +84,7 @@ Verificare che ci sia la dashboard winlogbeat
 - Scegliere Windows zip format
 - Creare una cartella in c:\filebeat
 - Decomprimere lo zip in quella cartella
+- usare il file filebeat.yml di questa repository come esempio
 - Editare il file filebeat.yml come segue:
 
 Aggiungere la seguente riga in una riga vuota prima di filebeat.inputs:
@@ -114,7 +115,6 @@ filebeat.inputs:
     - "C:/Program Files (x86)/TeamViewer/Update/TV15Install.log"
 
 - Aprire una powershell e lanciare i comandi seguenti:
-
 - Aprire una finestra powershell e posizionarsi in c:\filebeat
 - Lanciare il comando: .\filebeat.exe test config -c .\filebeat.yml -e
 - Verificare che esito sia ok
@@ -132,7 +132,8 @@ Verificare che l'indice ci sia alla url: http://10.21.20.15:9200/_cat/indices?v
 Usare repository yum o scaricare da qui
 https://www.elastic.co/downloads/beats/filebeat
 
-- Usare il file /etc/filebeat/filebeat.yml come esempio di configurazione (simile a windows)
+- Usare il file filebeat.yml come esempio di configurazione (simile a windows)
+- Editare il file /etc/filebeat/filebeat.yml
 - Importante aggiungere in una riga vuota la direttiva:
 	output.elasticsearch.allow_older_versions: true
 - Modificare sezioni output.elasticsearch e kibana l'ip dell'host
