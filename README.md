@@ -8,8 +8,10 @@ Installation:
 - launch comand: nohup ./install.sh > install_elk.log 2>&1 & (this will create a install_elk.log file to future troubleshooting in case of issues)
 - Wait the completition of script
 - Proceed to install agent winlogbeat/filebeat to windows or linux clients for foreward clients log to logstash server (see readme.txt)
+
 Pay attention to:
 
 - The script will launch dnf update (comment this line if you dont want to update your server)
 - The script disable selinux permanently
 - At the end of the script the server will be rebooted (comment out line 53 if you don't want to restart the server)
+- The files filebeat.yml and winlogbeat.yml is for example and not used by the script
