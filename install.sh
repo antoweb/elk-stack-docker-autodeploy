@@ -18,7 +18,7 @@ dnf update -y
 
 #Installo docker e i container elk
 sudo dnf config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
-sudo dnf install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin rsyslog wget vim nc rsyslog mlocate
+sudo dnf install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin rsyslog wget vim nc mlocate
 updatedb
 systemctl enable docker
 systemctl start docker
